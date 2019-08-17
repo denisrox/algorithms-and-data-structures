@@ -2,21 +2,21 @@ import java.util.Random;
 
 public class main {
     public static void main(String[] args) {
-        Array<Integer> arr1=new MyArrayList<>();
+            Array<Integer> arr1=new MyArrayList<>();
         Array<Integer> arr2=new MyArrayList<>();
         Array<Integer> arr3=new MyArrayList<>();
         Array<Integer> arr4=new MyArrayList<>();
-        for(int i = 0;i<40000;i++)
+        for(int i = 0;i<1000000;i++)
         {
-            Random random = new Random();
-            int rnd= random.nextInt(100000);
-            arr1.add(rnd);
-            arr2.add(rnd);
-            arr3.add(rnd);
-            arr4.add(rnd);
+            //Random random = new Random();
+            //int rnd= random.nextInt(100000);
+            arr1.add(i);
+            arr2.add(i);
+            arr3.add(i);
+            arr4.add(i);
         }
         long startTime = System.currentTimeMillis();
-        arr1.sortBubble();
+        //arr1.sortBubble();
         long stopTime = System.currentTimeMillis();
         System.out.println("Время пузырьковой сортировки: "+(stopTime - startTime));
 
@@ -26,7 +26,7 @@ public class main {
         System.out.println("Время вставочной сортировки: "+(stopTime - startTime));
 
         startTime = System.currentTimeMillis();
-        arr3.sortSelect();
+        //arr3.sortSelect();
         stopTime = System.currentTimeMillis();
         System.out.println("Время выборочной сортировки: "+(stopTime - startTime));
 
