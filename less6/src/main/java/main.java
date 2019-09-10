@@ -5,6 +5,7 @@ public class main {
 //        testTree();
         analysed(10000,10,3,4);
         analysed(10000,10,3,40);
+        analysed(10000,10,15,40);
         analysed(10000,100,3,40);
         analysed(10000,10,3,100);
         analysed(10000,10,3,200);
